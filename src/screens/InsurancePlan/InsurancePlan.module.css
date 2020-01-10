@@ -1,0 +1,104 @@
+:root {
+    --borderWidth: 2px;
+    --height: 12px;
+    --width: 6px;
+    --borderColor: #000;
+}
+
+.plansWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.planBox {
+    font-size: 14px;
+    width: 32%;
+    margin-top: 20px;
+}
+
+.planBox .planInfo span {
+    color: #888888;
+}
+.protectionFeatures {
+    background-color: #c6c9d4;
+    padding: 20px;
+    font-weight: bold;
+    min-height: 170px;
+}
+
+.featuredPlan {
+    box-shadow: 0 0 22px 3px rgba(188, 188, 188, 0.65);
+    z-index: 1;
+    width: 34%;
+    margin-top: 0;
+}
+
+.featuredPlan h1 {
+    margin-top: 40px;
+}
+
+.planInfo {
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: white;
+}
+
+.featuredPlan .planInfo {
+    background-image: url('common/img/featured-flag.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 20px top;
+    height: 275px;
+}
+
+.planPrice {
+    color: #1f6bef;
+    font-size: 18px;
+}
+
+.deductibleInfo {
+    border-top: 1px solid white;
+    background-color: #c6c9d4;
+    font-weight: bold;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.planActions {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.planActions button {
+    border: 2px solid #1f6bef;
+    background: white;
+    padding: 5px 40px;
+    color: #1f6bef;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.planActions button:hover {
+    background: #1f6bef;
+    color: white;
+    transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+.check {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: var(--height);
+    width: var(--width);
+    border-bottom: var(--borderWidth) solid var(--borderColor);
+    border-right: var(--borderWidth) solid var(--borderColor);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.pdb50 {
+    padding-bottom: 50px;
+}
